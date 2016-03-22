@@ -12,6 +12,9 @@ title: {{ nb.cells[0].source.split('\n')[0].split('#')[1] }}
 {%- endblock output_prompt %}
 
 {% block input %}
+{% raw %}{% highlight python linenos %}{% endraw %}
+{{ cell.source}}
+{% raw %}{% endhighlight %}{% endraw %}
 {% endblock input %}
 
 {% block error %}

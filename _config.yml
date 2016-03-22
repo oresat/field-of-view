@@ -9,7 +9,11 @@ exclude:
   - jupyter-jekyll.tpl
   - deploy.sh
   - field-of-view.ipynb
+
 timezone:   America/Los_Angeles
 markdown:   kramdown
 highlight:  rouge
+kramdown:
+  toc_levels: "2,3"
+
 excerpt_separator: "\n\n\n\n"

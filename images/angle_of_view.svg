@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="425.03592" height="351.46451" id="svg2" sodipodi:version="0.32" inkscape:version="0.44" sodipodi:docbase="/Users/dicklyon/Desktop/wiki pix" sodipodi:docname="Angle of view.svg" version="1.0">
+  <defs id="defs4">
+    <marker inkscape:stockid="Arrow2Lend" orient="auto" refY="0" refX="0" id="Arrow2Lend" style="overflow: visible;">
+      <path id="path2983" style="font-size: 12px; fill-rule: evenodd; stroke-width: 0.625; stroke-linejoin: round;" d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.97309,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z " transform="matrix(-1.1, 0, 0, -1.1, -1.1, 0)"/>
+    </marker>
+    <marker inkscape:stockid="Arrow1Lstart" orient="auto" refY="0" refX="0" id="Arrow1Lstart" style="overflow: visible;">
+      <path id="path3004" d="M 0,0 L 5,-5 L -12.5,0 L 5,5 L 0,0 z " style="fill-rule: evenodd; stroke: black; stroke-width: 1pt; marker-start: none;" transform="matrix(0.8, 0, 0, 0.8, 10, 0)"/>
+    </marker>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" gridtolerance="10000" guidetolerance="10" objecttolerance="10" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="1.4" inkscape:cx="226.14298" inkscape:cy="194.47356" inkscape:document-units="px" inkscape:current-layer="layer1" inkscape:object-nodes="true" inkscape:window-width="923" inkscape:window-height="857" inkscape:window-x="0" inkscape:window-y="22"/>
+  <metadata id="metadata7">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(-199.625, -373.416)">
+    <path id="path2764" d="M 386.59857,388.36136 L 390.16922,565.74847 L 594.99448,671.99622 L 595.43308,501.84171 L 386.59857,388.36136 z " style="fill: rgb(216, 255, 216); fill-opacity: 1; fill-rule: evenodd; stroke: black; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;"/>
+    <path style="fill: none; fill-rule: evenodd; stroke: black; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="M 595,502.36218 L 279.28571,655.21933 L 386.42857,388.79075" id="path2766" sodipodi:nodetypes="ccc"/>
+    <path style="fill: none; fill-rule: evenodd; stroke: black; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="M 389.28571,565.21932 L 278.57143,654.50505 L 594.28571,670.93361" id="path2768" sodipodi:nodetypes="ccc"/>
+    <g id="g2792" transform="translate(-20.2031, 13.6371)" style="fill: rgb(231, 218, 216); fill-opacity: 1;">
+      <g transform="translate(72.8571, 86.4286)" id="g2778" style="fill: rgb(231, 218, 216); fill-opacity: 1;">
+        <path style="fill: rgb(231, 218, 216); fill-opacity: 1; fill-rule: evenodd; stroke: black; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="M 171.38946,532.34481 L 172.36921,580.83275 L 228.15612,609.88344 L 228.26855,563.37265 L 171.38946,532.34481 z " id="path1872"/>
+        <path style="fill: rgb(231, 218, 216); fill-opacity: 1; fill-rule: evenodd; stroke: black; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="M 227.85714,563.07646 L 171.42857,532.36218 L 190.71429,520.21932 L 246.42857,550.21932 L 247.14286,598.07646 L 228.57143,609.50504 L 227.85714,563.07646 z " id="path2776"/>
+        <path style="fill: rgb(231, 218, 216); fill-opacity: 1; fill-rule: evenodd; stroke: black; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="M 171.3346,532.26706 L 191.05755,519.99837 L 247.35912,550.57163 L 247.15196,597.76271 L 228.35131,609.9728 L 227.87408,563.52471 L 247.05605,550.92426" id="path2762" sodipodi:nodetypes="ccccccc"/>
+      </g>
+      <path sodipodi:nodetypes="ccccc" id="path2783" d="M 257.85714,638.79075 L 285.71429,653.79075 L 285.71429,678.07647 L 257.81382,662.91059 L 257.85714,638.79075 z " style="fill: rgb(231, 218, 216); fill-rule: evenodd; stroke: black; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; fill-opacity: 1;"/>
+    </g>
+    <path style="fill: none; fill-rule: evenodd; stroke: black; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: miter; marker-start: none; stroke-miterlimit: 4; stroke-dasharray: 1, 3; stroke-dashoffset: 0pt; stroke-opacity: 1;" d="M 298.50008,655.62477 L 237.38585,652.34177" id="path2799" sodipodi:nodetypes="cc"/>
+    <path style="fill: none; fill-rule: evenodd; stroke: black; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: miter; marker-start: none; stroke-miterlimit: 4; stroke-dasharray: 1, 3; stroke-dashoffset: 0pt; stroke-opacity: 1;" d="M 284.1054,643.50294 L 265.16504,690.98011" id="path2801" sodipodi:nodetypes="cc"/>
+    <path style="fill: none; fill-rule: evenodd; stroke: black; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: miter; marker-start: none; stroke-miterlimit: 4; stroke-dasharray: 1, 3; stroke-dashoffset: 0pt; stroke-opacity: 1;" d="M 288.65109,646.02832 L 264.65996,667.24152" id="path2803" sodipodi:nodetypes="cc"/>
+    <path style="fill: none; fill-rule: evenodd; stroke: black; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: 1, 3; stroke-dashoffset: 0pt; stroke-opacity: 1;" d="M 293.44932,648.30117 L 237.89093,676.08036" id="path2805" sodipodi:nodetypes="cc"/>
+    <g id="g1958">
+      <path style="fill: black; fill-opacity: 1; fill-rule: evenodd; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="M 390.125,489 L 390.0625,490 C 467.94437,494.56736 518.90991,520.87787 550.4375,546.03125 C 581.96509,571.18463 594.03125,595.15625 594.03125,595.15625 L 594.90625,594.6875 C 594.90625,594.6875 582.73531,570.51924 551.0625,545.25 C 519.38969,519.98076 468.20553,493.57901 390.125,489 z " id="path2825"/>
+      <path style="fill-rule: evenodd; stroke: black; stroke-width: 0.8pt; marker-start: none;" d="M 400.06965,490.09041 L 404.29696,486.33145 L 390.0868,489.50497 L 403.82861,494.31773 L 400.06965,490.09041 z " id="path1964"/>
+      <path d="M 593.62937,583.37917 L 595.08123,596.10189 L 585.73287,587.35068 C 588.92663,587.89361 592.11093,586.2797 593.62937,583.37917 z " style="font-size: 12px; fill-rule: evenodd; stroke-width: 0.625; stroke-linejoin: round;" id="path1966"/>
+    </g>
+    <g id="g1968">
+      <path style="fill: black; fill-opacity: 1; fill-rule: evenodd; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="M 499.0625,450.25 L 498.0625,450.34375 C 503.41637,506.73791 501.45546,548.22556 498.15625,575.59375 C 494.85704,602.96194 490.25,616.1875 490.25,616.1875 L 491.1875,616.53125 C 491.1875,616.53125 495.84832,603.15931 499.15625,575.71875 C 502.46418,548.27819 504.4229,506.71299 499.0625,450.25 z " id="path2827"/>
+      <path style="fill-rule: evenodd; stroke: black; stroke-width: 0.8pt; marker-start: none;" d="M 499.51655,460.26122 L 503.87669,463.86527 L 498.57143,450.30598 L 495.9125,464.62136 L 499.51655,460.26122 z " id="path1974"/>
+      <path d="M 498.42743,607.72178 L 490.29315,617.61163 L 490.08249,604.80807 C 491.91298,607.48093 495.28702,608.64728 498.42743,607.72178 z " style="font-size: 12px; fill-rule: evenodd; stroke-width: 0.625; stroke-linejoin: round;" id="path1976"/>
+    </g>
+    <g id="g1978">
+      <path style="fill: black; fill-opacity: 1; fill-rule: evenodd; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="M 387.78125,389.21875 L 387.125,389.96875 C 478.87139,469.57748 530.4624,539.46334 559.125,589.4375 C 587.7876,639.41166 593.5,669.4375 593.5,669.4375 L 594.46875,669.25 C 594.46875,669.25 588.72011,639.01192 560,588.9375 C 531.27989,538.86308 479.60629,468.89572 387.78125,389.21875 z " id="path2829"/>
+      <path style="fill-rule: evenodd; stroke: black; stroke-width: 0.8pt; marker-start: none;" d="M 394.99173,396.14548 L 400.63445,395.74579 L 387.43872,389.5917 L 395.39142,401.7882 L 394.99173,396.14548 z " id="path1984"/>
+      <path d="M 596.34501,657.99917 L 594.25602,670.63291 L 587.66261,659.65555 C 590.58546,661.05262 594.09008,660.37276 596.34501,657.99917 z " style="font-size: 12px; fill-rule: evenodd; stroke-width: 0.625; stroke-linejoin: round;" id="path1986"/>
+    </g>
+  </g>
+</svg>

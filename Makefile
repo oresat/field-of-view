@@ -1,4 +1,4 @@
-site: clean index.md
+site: index.md
 	jekyll build
 
 index.md: field-of-view.ipynb
