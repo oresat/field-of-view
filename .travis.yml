@@ -1,0 +1,10 @@
+language: python
+python: 2.7
+before_install:
+  - rvm use 2.2.3 --install --fuzzy
+install:
+ - gem install --no-document jekyll
+ - pip install --use-wheel jupyter
+script:
+ - make
+ - ./deploy.sh
