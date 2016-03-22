@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Oregon Small Satellite Consortium">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56998473-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  <!--[if IE]><link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+  <link rel="icon" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/img/favicon.png">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800%7CRoboto:100,300" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/syntax.css">
+  <title>OreSat - Cubesat Camera Field of View</title>
+</head>
+<body>
+ <div class="wrapper">
+  <div id="header-one">
+   <h1><img src="/assets/img/logo.svg" alt="logo">Oregon Small Satellite Project</h1>
+  </div>
+   <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<div id="content">
+  <h1 id="cubesat-camera-field-of-view">Cubesat Camera Field of View</h1>
+
+<p>Figure out the theoretical field of view, resolution, and other useful optical properties of a small camera on a cubesat in <a href="http://www.universetoday.com/85322/low-earth-orbit/">Low Earth Orbit</a>.</p>
+
+<p><strong>Table of Contents</strong></p>
+
+<ol id="markdown-toc">
+  <li><a href="#field-of-view" id="markdown-toc-field-of-view">Field of View</a>    <ol>
+      <li><a href="#cell-phone-cameras" id="markdown-toc-cell-phone-cameras">Cell Phone Cameras</a></li>
+    </ol>
+  </li>
+  <li><a href="#what-does-that-look-like-from-space" id="markdown-toc-what-does-that-look-like-from-space">What Does That Look Like From Space?</a></li>
+  <li><a href="#resolution" id="markdown-toc-resolution">Resolution</a>    <ol>
+      <li><a href="#ifov" id="markdown-toc-ifov">IFOV</a></li>
+    </ol>
+  </li>
+  <li><a href="#choosing-a-camera" id="markdown-toc-choosing-a-camera">Choosing A Camera</a></li>
+</ol>
+
+<h2 id="field-of-view">Field of View</h2>
+
+<p>The <em>Field of View</em> (<strong>FOV</strong>) of a camera effectively how much it can see, given the kind of camera and lens attached. For example a telescope has a small field of view, looking at just a tiny piece of sky at a time, while a fisheye cameras have a large field of view, able to take picures of a whole room at once.</p>
+
+<p>Field of view is also closely related to the resolution of surface features, and will determine what kind of photos or potential science that will be possible.</p>
+
+<p>Field of view is an angular measurement, typically expressed in degrees. For cameras with rectangular sensors the FOV in the horizontal and vertical direction will be slightly different. Usually for cameras the FOV is defined for each axis, e.g., 56°×48°</p>
+
+<p><img src="images/angle_of_view.svg" alt="simple field of view visualization" /></p>
+
+<blockquote>
+  <p>Visualization of the angular field of view of a rectangular camera sensor showing horizontal, vertical, and diagonal FOV.</p>
+</blockquote>
+
+<p>If you know the size of the camera sensor, and the focal length of the lens in front of it, you can compute the field of view:</p>
+
+<script type="math/tex; mode=display">\begin{equation}\label{eq:fov}
+  \alpha = 2\arctan\frac{d}{2 f}
+\end{equation}</script>
+
+<p>where</p>
+
+<ul>
+  <li>$\alpha$ is the FOV</li>
+  <li>$d$ is the size of the sensor</li>
+  <li>$f$ is the focal length of the lens</li>
+</ul>
+
+<h3 id="cell-phone-cameras">Cell Phone Cameras</h3>
+
+<p>These days the ubiquitous small, cheap camera is the kind you find in cell phones. These cameras have fixed lenses often list the field of view or focal lenght in the specs. In the case of focal length, there are two kinds, the actual focal lenght of the physical lens in the system, and the “35 mm equivalent”. This 35 mm equivalent focal length is actually the field of view in disguise! The size of a 35 mm camera sensor is a standard value, so with a given lens focal length $f$ we can compute the angular FOV with eq. $\ref{eq:fov}$.</p>
+
+<p><strong>Example: iPhone 6s</strong></p>
+
+<p>The iPhone 6s rear camera is listed as a Sony IMX315, 12 MP CMOS camera with at 35 mm equivalent focal length of <em>29 mm</em><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. The size of a 35 mm sensor is 24×36 mm, plugging $d$ = 24 mm and 36 mm, $f$ = 29 mm into eq. $\ref{eq:fov}$ we get a FOV of:</p>
+
+<ul>
+  <li><strong>45° × 64° FOV</strong></li>
+</ul>
+
+<p>This is pretty typical for cell phone cameras.</p>
+
+<h2 id="what-does-that-look-like-from-space">What Does That Look Like From Space?</h2>
+
+<p>Assuming for the moment that one uses a cell phone camera as a sensor on a cubesat, what would you see?</p>
+
+<p>Cubesats mostly operate around 300 to 500 kilometers above the ground. This is about the same as the International Space Station, so it’s easy to get a good idea of what we can see just by looking at existing photography from the ISS<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</p>
+
+<p><a href="images/ISS040-E-113590.jpg"><img src="images/ISS040-E-113590.resized.jpg" alt="ISS040-E-113590" /></a></p>
+
+<blockquote>
+  <p><strong>ISS040-E-113590</strong><sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>: August 27th 2014, looking down on the Pacific NW from ~400 km altitude. Camera focal length: 34 mm, very similar to the iPhone example (29 mm). Solar elevation: 55°. Credit: <em>the International Space Station program and the JSC Earth Science &amp; Remote Sensing Unit, ARES Division, Exploration Integration Science Directorate.</em></p>
+</blockquote>
+
+<p>This is pretty representative of a low FOV camera pointed at the Earth from low Earth orbit. Depending on the resolution of the camera it’s still good enough to see individual (large) farms and even make out details in the cities.</p>
+
+<h2 id="resolution">Resolution</h2>
+
+<p>The field of view will tell us how much is visible in one picture, but we need another piece of information to determine how fine of detail we can resolve in the picture: Number of pixels (or the size of the pixels). If our camera has lots of pixels, we’re gathering more spacial data inside the field of view. So why not always have as many pixels as possible? It’s complicated, but more is not always better. There is a trade-off with other factors like noise.</p>
+
+<h3 id="ifov">IFOV</h3>
+
+<p>In remote sensing applications, instruments are often rated by their “<strong>IFOV</strong>” or Instantainous Field of View, which is the effective FOV of a single pixel in the camera, rather than for the whole image. If you know the distance to the subject it’s very easy to convert this to a linear size, i.e., smallest resolved feature in meters per pixel.</p>
+
+<p>In our iPhone example the pixels are listed as being<sup id="fnref:1:1"><a href="#fn:1" class="footnote">1</a></sup> 1.19 μm across. This is the size of one <em>effective</em> pixel, which is actually made up of four smaller elements, each covered by a color filter (this is how digital color cameras work). The physical focal length is 4.02 mm. Plugging into eq ${\ref{eq:fov}}$ gets us the IFOV of:</p>
+
+<ul>
+  <li><strong>61 arcseconds</strong></li>
+</ul>
+
+<p>This is the field of view of a single pixel. To turn into a linear feature size at some distance we use:</p>
+
+<script type="math/tex; mode=display">\begin{equation}\label{eq:res}
+  d = 2A\tan\left(\frac{\delta}{2}\right)
+\end{equation}</script>
+
+<p>where</p>
+
+<ul>
+  <li>$d$ is the feature size</li>
+  <li>$A$ is the distance to the feature</li>
+  <li>$\delta$ is the angular size, or IFOV in this case</li>
+</ul>
+
+<p>At a distance of 400 km that would give the iPhone a resolution of:</p>
+
+<ul>
+  <li><strong>120 meters per pixel</strong></li>
+</ul>
+
+<p>Which is suprisingly good, though that’s mostly because 400 km is not very high up. Also a real iPhone would likely never have this crisp of view because of all the things stopping a real world system from having perfect resoultion including, but not limited to:</p>
+
+<ul>
+  <li>Diffraction effects from the camera system</li>
+  <li>Noise</li>
+  <li>Blurring induced by the atmosphere</li>
+</ul>
+
+<p>In practice a small camera likely has a resoluion worse that this naïve calculation.</p>
+
+<h2 id="choosing-a-camera">Choosing A Camera</h2>
+
+<p>In the case where you know what resolution you want, and need to look through camera datasheets to find a matching one we can write some simple code.</p>
+
+<p>First let’s define what we want in terms of resolution, and assume a small camera sensor (take a guess).</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="n">resolution</span>  <span class="o">=</span> <span class="mf">100.0</span>   <span class="c">#: desired resolution in meters per pixel</span>
+<span class="n">sensor_size</span> <span class="o">=</span>   <span class="mf">5.0</span>   <span class="c">#: mm (ignore aspect ratio)</span>
+<span class="n">altitude</span>    <span class="o">=</span> <span class="mf">400e3</span>   <span class="c">#: CubeSat altitude in meters</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Then compute the camera specs for a few common resolutions:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></td><td class="code"><pre><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">atan</span><span class="p">,</span> <span class="n">tan</span><span class="p">,</span> <span class="n">degrees</span>
+
+<span class="c"># some common camera resolutions</span>
+<span class="n">pixelcount</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="o">**</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="o">**</span><span class="mi">11</span><span class="p">,</span> <span class="mi">2</span><span class="o">**</span><span class="mi">12</span><span class="p">]</span> <span class="c"># 1 MP to 16 MP</span>
+
+<span class="c"># nessisary IFOV for given resolution</span>
+<span class="n">ifov</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">atan</span><span class="p">(</span><span class="n">resolution</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">altitude</span><span class="p">))</span>
+
+<span class="k">print</span> <span class="s">"**Camera specs for seeing at </span><span class="si">%0.0</span><span class="s">f m/px**</span><span class="se">\n</span><span class="s">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">resolution</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">" Camera resolution | Pixel Size [&amp;mu;m] | Focal Length [mm] | FOV [&amp;deg;] | 35 mm equiv. Lens "</span>
+<span class="k">print</span> <span class="s">" ----------------- | -----------------: | ----------------: | ----------: | ----------------: "</span>
+<span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">pixelcount</span><span class="p">:</span>
+    <span class="n">pixel_size</span> <span class="o">=</span> <span class="n">sensor_size</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+    <span class="n">focal_length</span> <span class="o">=</span> <span class="n">pixel_size</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">tan</span><span class="p">(</span><span class="n">ifov</span><span class="o">/</span><span class="mf">2.0</span><span class="p">))</span>
+    <span class="n">fov</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">atan</span><span class="p">(</span><span class="n">sensor_size</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">focal_length</span><span class="p">))</span>
+    <span class="n">film</span> <span class="o">=</span> <span class="mi">36</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">tan</span><span class="p">(</span><span class="n">fov</span><span class="o">/</span><span class="mf">2.0</span><span class="p">))</span>
+    
+    <span class="k">print</span> <span class="s">"""  </span><span class="si">%</span><span class="s">d&amp;times;</span><span class="si">%</span><span class="s">d  | </span><span class="si">%18.2</span><span class="s">f | </span><span class="si">%17.1</span><span class="s">f | </span><span class="si">%11.1</span><span class="s">f | </span><span class="si">%14.0</span><span class="s">f mm
+"""</span> <span class="o">%</span> <span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="n">res</span><span class="p">,</span> <span class="n">pixel_size</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span> <span class="n">focal_length</span><span class="p">,</span> <span class="n">degrees</span><span class="p">(</span><span class="n">fov</span><span class="p">),</span> <span class="n">film</span><span class="p">),</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p><strong>Camera specs for seeing at 100 m/px</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Camera resolution</th>
+      <th style="text-align: right">Pixel Size [μm]</th>
+      <th style="text-align: right">Focal Length [mm]</th>
+      <th style="text-align: right">FOV [°]</th>
+      <th style="text-align: right">35 mm equiv. Lens</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1024×1024</td>
+      <td style="text-align: right">4.88</td>
+      <td style="text-align: right">19.5</td>
+      <td style="text-align: right">14.6</td>
+      <td style="text-align: right">141 mm</td>
+    </tr>
+    <tr>
+      <td>2048×2048</td>
+      <td style="text-align: right">2.44</td>
+      <td style="text-align: right">9.8</td>
+      <td style="text-align: right">28.7</td>
+      <td style="text-align: right">70 mm</td>
+    </tr>
+    <tr>
+      <td>4096×4096</td>
+      <td style="text-align: right">1.22</td>
+      <td style="text-align: right">4.9</td>
+      <td style="text-align: right">54.2</td>
+      <td style="text-align: right">35 mm</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>It’s clear from the table that it’s probably better to have the highest resolution sensor you can get, if you want to save space and get high resolution.</p>
+
+<hr />
+
+<h4 id="footnotes"><em>Footnotes:</em></h4>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="http://www.devicespecifications.com/en/model/df6f3676">http://www.devicespecifications.com/en/model/df6f3676</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:2">
+      <p><a href="http://eol.jsc.nasa.gov/">http://eol.jsc.nasa.gov/</a> <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p><a href="http://eol.jsc.nasa.gov/SearchPhotos/photo.pl?mission=ISS040&amp;roll=E&amp;frame=113590">http://eol.jsc.nasa.gov/SearchPhotos/photo.pl?mission=ISS040&amp;roll=E&amp;frame=113590</a> <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+ </div>
+ <div id="footer">
+  <div id="info">
+   <p>&copy; 2016 <a href="http://oresat.org/">Oregon Small Satellite Project</a></p>
+   <p>Having trouble viewing the site? <a href="https://github.com/oresat/oresat.github.io/issues">Report an issue.</a></p>
+  </div>
+ </div>
+</body>
+</html>
