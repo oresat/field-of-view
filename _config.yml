@@ -1,0 +1,15 @@
+name: Oregon Small Satellite
+description: Oregon Small Satellite Consortium
+url: http://oresat.org
+
+exclude:
+  - README.markdown
+  - LICENSE
+  - Makefile
+  - jupyter-jekyll.tpl
+  - deploy.sh
+  - field-of-view.ipynb
+timezone:   America/Los_Angeles
+markdown:   kramdown
+highlight:  rouge
+excerpt_separator: "\n\n\n\n"
